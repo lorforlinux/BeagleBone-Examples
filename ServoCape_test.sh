@@ -11,10 +11,10 @@ function enable {
 
 echo "Servo attached to S1 must be running now..."
 
-disable
 echo 10000000 > $servo1/period
 echo 1000000 > $servo1/duty_cycle
 enable
+
 sleep 1
 echo 2000000 > $servo1/duty_cycle
 sleep 1

@@ -1,5 +1,5 @@
 #!/bin/bash
-servo1=/sys/bus/i2c/drivers/pca9685-pwm/2-0070/pwm/pwmchip*/pwm*:0/
+servo1=/sys/bus/i2c/drivers/pca9685-pwm/*-0070/pwm/pwmchip*/pwm*:0/
 
 function disable {
         echo 0 > $servo1/enable
